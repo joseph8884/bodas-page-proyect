@@ -1,0 +1,24 @@
+.conoce_mas_frontPage1{
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(62, 223, 22);
+}
+.conoce_mas_frontPage2{
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 0, 200);
+}
+.conoce_mas_frontPage3{
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 251, 0);
+}

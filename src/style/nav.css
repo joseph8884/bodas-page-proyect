@@ -1,0 +1,8 @@
+nav{
+    height: 35vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: aqua;
+}

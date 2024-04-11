@@ -1,0 +1,8 @@
+.formulario_contacto{
+    height: 70vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(122, 22, 216);
+}

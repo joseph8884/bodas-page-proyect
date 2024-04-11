@@ -1,0 +1,8 @@
+.Galeria_fotos_frontPage{
+    height: 70vh;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(140, 33, 202, 0.616);
+}
