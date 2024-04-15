@@ -1,8 +1,7 @@
 .grid-layout1{
     display: grid;
     grid-template-columns: 1fr 1.3fr;
-    margin-top: 30px;
-
+    margin-top: 100px;
 }
 
 .conoce_mas_frontPage1{
@@ -10,6 +9,7 @@
     place-content: center;
     background-color: rgb(251, 248, 241);
 }
+
 h1{
     color: rgb(195, 147, 124);
     font-size: 43px;
@@ -66,7 +66,6 @@ p{
 .grid-layout2{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    margin-top: 120px;
 }
 
 .conoce_mas_frontPage2{
@@ -93,8 +92,6 @@ p{
 .grid-layout3{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    margin-top: 70px;
-
 }
 
 .conoce_mas_frontPage3{

@@ -17,23 +17,11 @@ function App() {
 
   return (
     <body>
-      <nav>Barra de buscar: va a ser de JOSE</nav>
-      <header>
-        <p>Carrusel : Jose</p>
-      </header>
-
-      <div>
+      <Nav />
+        <Carrusel />
           <Novia />
-      </div>
-
-      <div>
           <Accesorios />
-      </div>
-
-      <div>
           <Vestido />
-      </div>
-
       <section className="Galeria_fotos_frontPage">
         <Galeria images={images}/>
       </section>
