@@ -1,9 +1,94 @@
-header{
+header {
     height: 65vh;
     display: grid;
     place-content: center;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(251, 248, 241);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 
+    & article.cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+        z-index: 10;
+        padding: 20% 20% 0 20%;
+
+        & p {
+            z-index: 6;
+            font-size: 25px;
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        & button {
+            margin: 30px 20px;
+            font-size: 25px;
+        }
+    }
+
+    & div.list {
+        position: absolute;
+        width: max-content;
+        display: flex;
+        transition: 2s;
+
+        & img {
+            width: 100vw;
+            max-width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    & div.buttons {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+
+        & button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff5;
+            color: #fff;
+            border: none;
+            font-family: monospace;
+            font-weight: bold;
+            z-index: 9;
+        }
+    }
+
+    & ul.dots {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 8;
+
+        & li {
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            padding: 10px;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 1.5s;
+            z-index: 7;
+            cursor: pointer;
+        }
+    }
+}
+
+.slider .dots li.active {
+    /*animacion de agrandar los puntos*/
+    width: 50px;
+    background-color: #06A241;
 }

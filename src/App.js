@@ -1,9 +1,10 @@
-
 import img1 from './img/img1.png';
 import img2 from './img/img2.png';
 import img3 from './img/img3.png';
 import Galeria from "./Galeria";
 import Formulario from "./Formulario"
+import Nav from "./componentes/Nav/Nav";
+import Carrusel from "./componentes/frontpage/Carrusel";
 
 
 function App() {
@@ -69,7 +70,6 @@ function App() {
               <img className="img3" src={img3}/>
           </section>
       </div>
-
       <section className="Galeria_fotos_frontPage">
         <Galeria images={images}/>
       </section>

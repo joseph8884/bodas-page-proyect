@@ -1,8 +1,56 @@
-nav{
-    height: 35vh;
+nav {
     display: grid;
-    place-content: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: aqua;
+    grid-template-areas: "logo" "socialMedia" "options" "button";
+    background-color: #ffff;
+    align-content: space-between;
+    & div.navContainer {
+        display: grid;
+        padding: 0;
+        margin-left: 25%;
+        grid-template:
+            "logo socialMedia" auto
+            "options button" auto/
+            auto 35%;
+        align-content: center;
+        justify-items: center;
+        & img.logo {
+            grid-area: logo;
+            margin: 0 auto 0 auto; 
+            width: 35vw;
+        }
+        & div.socialMedia {
+            grid-area: socialMedia;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 0 auto;
+        }
+        & div.options {
+            grid-area: options;
+            display: inline-flex;
+            justify-content: space-between;
+            & img{
+                width: 9vw;
+            }
+        }
+        & div.buttonContainer {
+            grid-area: button;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            button {
+                grid-area: button;
+                padding: 0.5vw 3vw 0.5vw 3vw;
+                background-color: #ffffff00;
+                color: #C3937C;
+                width: 15vw;
+                border: 2px solid #C3937C;
+                border-radius: 50px;
+                font-size: 1.5vw;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
 }
