@@ -1,7 +1,7 @@
 nav {
     display: grid;
     grid-template-areas: "logo" "socialMedia" "options" "button";
-    background-color: #ffff;
+    background-color: #FBF8F1;
     align-content: space-between;
     & div.navContainer {
         display: grid;
