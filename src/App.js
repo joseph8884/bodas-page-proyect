@@ -1,9 +1,9 @@
-
+import Nav from "./componentes/Nav/Nav";
 
 function App() {
   return (
     <body>
-      <nav>Barra de buscar: va a ser de JOSE</nav>
+      <Nav />
       <header>
         <h1>Carrusel : Jose</h1>
       </header>
