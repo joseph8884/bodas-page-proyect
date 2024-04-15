@@ -1,24 +1,118 @@
+.grid-layout1{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    margin-top: 30px;
+
+}
+
 .conoce_mas_frontPage1{
     height: 80vh;
-    display: grid;
     place-content: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(62, 223, 22);
+    background-color: rgb(251, 248, 241);
 }
+h1{
+    color: rgb(195, 147, 124);
+    font-size: 43px;
+    line-height: 55px;
+    margin-left: 110px;
+    margin-right: 55px;
+    font-weight: 100;
+    font-family: cormorant, serif;
+}
+
+h2{
+    line-height: 25px;
+    margin-left: 110px;
+    margin-right: 55px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: grey;
+}
+
+p{
+    margin-left: 110px;
+    margin-right: 45px;
+    font-size: 17px;
+    color: rgb(162, 162, 162);
+}
+
+button{
+    margin-left: 110px;
+    font-weight: bold;
+    height: 60px;
+    color: rgb(195, 147, 124);
+    font-size: 25px;
+    width: 170px;
+    border-radius: 40px;
+    background-color: transparent;
+    border-color: rgb(195, 147, 124);
+    font-family: montagu slab, serif;
+}
+
+.imagen1{
+    background-color: rgb(251, 248, 241);
+    justify-content: right;
+}
+
+.img1{
+    width: 880px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.grid-layout2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 120px;
+}
+
 .conoce_mas_frontPage2{
     height: 80vh;
     display: grid;
     place-content: center;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(255, 0, 200);
+    background-color: rgba(251, 248, 241, 1);
 }
+
+.imagen2{
+    background-color: rgb(251, 248, 241);
+    text-align: center;
+    place-content: center;
+}
+
+.img2{
+    width: 880px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.grid-layout3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 70px;
+
+}
+
 .conoce_mas_frontPage3{
     height: 80vh;
     display: grid;
     place-content: center;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(255, 251, 0);
+    background-color: rgba(251, 248, 241, 1);
+}
+
+.imagen3{
+    background-color: rgb(251, 248, 241);
+    text-align: center;
+    place-content: center;
+    margin-bottom: 100px;
+}
+
+.img3{
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
 }
