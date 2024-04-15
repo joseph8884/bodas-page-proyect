@@ -25,6 +25,7 @@ header {
         display: flex;
         justify-content: space-between;
         z-index: 10;
+        background-color: transparent;
 
         & button {
             width: 3vw;
@@ -48,6 +49,7 @@ header {
         display: flex;
         justify-content: center;
         z-index: 8;
+        background-color: transparent;
 
         & li {
             list-style: none;
