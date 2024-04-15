@@ -1,8 +1,19 @@
+
 import img1 from './img/img1.png';
 import img2 from './img/img2.png';
 import img3 from './img/img3.png';
+import Galeria from "./Galeria";
+import Formulario from "./Formulario"
+
 
 function App() {
+
+  const images = [
+    'https://img.freepik.com/foto-gratis/anillos-boda-estan-velo-novia-flores_8353-9817.jpg',
+    'https://upload.wikimedia.org/wikipedia/commons/c/c1/Salones_de_Boda.jpg',
+    'https://img.freepik.com/foto-gratis/alianzas-boda-manos-novia-novio-hermoso-ramo-novia-hecho-vegetacion-flores-blancas_8353-11212.jpg'
+  ];
+
   return (
     <body>
       <nav>Barra de buscar: va a ser de JOSE</nav>
@@ -60,10 +71,10 @@ function App() {
       </div>
 
       <section className="Galeria_fotos_frontPage">
-        <p>Gaeleria de fotos: Mateo</p>
+        <Galeria images={images}/>
       </section>
       <section className="formulario_contacto">
-        <p>Contactanos : Mateo</p>
+        <Formulario />
       </section>
       <footer>
         <p>Foooter: Parte de santafe</p>
