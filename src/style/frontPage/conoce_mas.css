@@ -37,13 +37,13 @@ p{
     color: rgb(162, 162, 162);
 }
 
-button{
+.conoce{
     margin-left: 110px;
     font-weight: bold;
-    height: 60px;
+    height: 80px;
     color: rgb(195, 147, 124);
     font-size: 25px;
-    width: 170px;
+    width: 200px;
     border-radius: 40px;
     background-color: transparent;
     border-color: rgb(195, 147, 124);
@@ -53,6 +53,8 @@ button{
 .imagen1{
     background-color: rgb(251, 248, 241);
     justify-content: right;
+    position: absolute;
+    right: 0;
 }
 
 .img1{
