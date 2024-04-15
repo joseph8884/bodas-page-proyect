@@ -1,12 +1,11 @@
 import Nav from "./componentes/Nav/Nav";
+import Carrusel from "./componentes/frontpage/Carrusel";
 
 function App() {
   return (
     <body>
       <Nav />
-      <header>
-        <h1>Carrusel : Jose</h1>
-      </header>
+      <Carrusel />
       <section className="conoce_mas_frontPage1">
         <p>Tu vestido de novia una experiencia unica.  ==== Abril</p>
       </section>

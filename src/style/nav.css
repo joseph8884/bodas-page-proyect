@@ -4,7 +4,6 @@ nav {
     background-color: #ffff;
     align-content: space-between;
     & div.navContainer {
-        background-color: aquamarine;
         display: grid;
         padding: 0;
         margin-left: 25%;

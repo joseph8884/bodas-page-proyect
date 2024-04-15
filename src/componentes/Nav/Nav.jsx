@@ -20,7 +20,6 @@ const Nav = () => {
                 <div className="buttonContainer">
                     <button>AGENDA TU CITA</button>
                 </div>
-
             </div>
         </nav>
     );
