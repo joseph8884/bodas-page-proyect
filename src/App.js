@@ -1,5 +1,5 @@
-import Galeria from "./Galeria";
-import Formulario from "./Formulario"
+import Galeria from "./componentes/Galeria/Galeria";
+import Formulario from "./componentes/Formulario/Formulario"
 import Nav from "./componentes/Nav/Nav";
 import Carrusel from "./componentes/frontpage/Carrusel";
 import Novia from "./componentes/frontpage/Novia";
