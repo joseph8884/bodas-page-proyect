@@ -5,6 +5,7 @@ import Carrusel from "./componentes/frontpage/Carrusel";
 import Novia from "./componentes/frontpage/Novia";
 import Accesorios from "./componentes/frontpage/Accesorios";
 import Vestido from "./componentes/frontpage/Vestido";
+import Footer from "./componentes/Footer1/Footer.jsx";
 
 
 function App() {
@@ -28,9 +29,7 @@ function App() {
       <section className="formulario_contacto">
         <Formulario />
       </section>
-      <footer>
-        <p>Foooter: Parte de santafe</p>
-      </footer>
+      <Footer/>
     </body>
   );
 }
