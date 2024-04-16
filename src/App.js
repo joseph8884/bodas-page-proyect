@@ -19,6 +19,7 @@ function App() {
   return (
     <body>
       <Nav />
+      <br></br>
         <Carrusel />
           <Novia />
           <Accesorios />
