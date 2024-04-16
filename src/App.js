@@ -26,9 +26,9 @@ function App() {
       <section className="Galeria_fotos_frontPage">
         <Galeria images={images}/>
       </section>
-      <section id="formulario_contacto" className="formulario_contacto">
-        <Formulario />
-      </section>
+    <section id="formulario_contacto" className="formulario_contacto">
+      <Formulario />
+    </section>
       <Footer/>
     </body>
   );
