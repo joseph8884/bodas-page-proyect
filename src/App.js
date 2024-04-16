@@ -1,10 +1,11 @@
-import Galeria from "./Galeria";
-import Formulario from "./Formulario"
+import Galeria from "./componentes/Galeria/Galeria";
+import Formulario from "./componentes/Formulario/Formulario"
 import Nav from "./componentes/Nav/Nav";
 import Carrusel from "./componentes/frontpage/Carrusel";
 import Novia from "./componentes/frontpage/Novia";
 import Accesorios from "./componentes/frontpage/Accesorios";
 import Vestido from "./componentes/frontpage/Vestido";
+import Footer from "./componentes/Footer1/Footer.jsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <body>
       <Nav />
+      <br></br>
         <Carrusel />
           <Novia />
           <Accesorios />
@@ -25,12 +27,10 @@ function App() {
       <section className="Galeria_fotos_frontPage">
         <Galeria images={images}/>
       </section>
-      <section className="formulario_contacto">
-        <Formulario />
-      </section>
-      <footer>
-        <p>Foooter: Parte de santafe</p>
-      </footer>
+    <section id="formulario_contacto" className="formulario_contacto">
+      <Formulario />
+    </section>
+      <Footer/>
     </body>
   );
 }
