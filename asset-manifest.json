@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bodas-page-proyect/static/css/main.9f462a0d.css",
+    "main.js": "/bodas-page-proyect/static/js/main.c7542cdf.js",
+    "static/media/img3.png": "/bodas-page-proyect/static/media/img3.9a241d862368dd6b2c63.png",
+    "static/media/img1.png": "/bodas-page-proyect/static/media/img1.9db0e24da5d646d58ca9.png",
+    "static/media/img2.png": "/bodas-page-proyect/static/media/img2.0e17276981b3b33aad16.png",
+    "index.html": "/bodas-page-proyect/index.html",
+    "main.9f462a0d.css.map": "/bodas-page-proyect/static/css/main.9f462a0d.css.map",
+    "main.c7542cdf.js.map": "/bodas-page-proyect/static/js/main.c7542cdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f462a0d.css",
+    "static/js/main.c7542cdf.js"
+  ]
+}
