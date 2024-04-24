@@ -1,7 +1,7 @@
 nav {
     display: grid;
     grid-template-areas: "logo" "socialMedia" "options" "button";
-    background-color: #ffff;
+    background-color: #FBF8F1;
     align-content: space-between;
     & div.navContainer {
         display: grid;
@@ -15,7 +15,7 @@ nav {
         justify-items: center;
         & img.logo {
             grid-area: logo;
-            margin: 0 auto 0 auto; 
+            margin: 0 auto 0 auto;
             width: 35vw;
         }
         & div.socialMedia {
@@ -24,7 +24,7 @@ nav {
             grid-template-rows: 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
-            margin: 0 auto 0 auto;
+            margin: 0;
         }
         & div.options {
             grid-area: options;
@@ -39,17 +39,38 @@ nav {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            button {
+            & button{    
                 grid-area: button;
                 padding: 0.5vw 3vw 0.5vw 3vw;
-                background-color: #ffffff00;
-                color: #C3937C;
-                width: 15vw;
-                border: 2px solid #C3937C;
-                border-radius: 50px;
                 font-size: 1.5vw;
-                font-weight: bold;
-                cursor: pointer;
+                width: 15vw;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    nav {
+        & div.navContainer {
+            margin-left: 0;
+            grid-template:
+                "logo logo" auto
+                "options options" auto
+                "socialMedia button" 25%/
+                auto 50%;
+            & img.logo {
+                width: 50vw;
+            }
+            & div.options img{
+                    width: 18vw;
+            }
+            & div.buttonContainer button{    
+                    font-size: 3.5vw;
+                    width: 25vw;
+            }
+            & div.socialMedia {
+                grid-area: socialMedia;
+                grid-template-rows: 1fr;
+                font-size: 5px;
             }
         }
     }

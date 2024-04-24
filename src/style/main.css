@@ -4,4 +4,21 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     font-size: 20px;
+    background-color: rgb(251, 248, 241);
 }
+button {
+    outline: none;
+    background-color: transparent;
+    color: #C3937C;
+    border: 2px solid #C3937C;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montagu Slab', serif;
+    font-weight: bold;
+    border-radius: 50px;
+}
+button:hover{
+color: #FBF8F1;
+background-color: #C3937C;
+}
+

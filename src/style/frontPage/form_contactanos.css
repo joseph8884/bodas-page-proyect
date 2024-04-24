@@ -1,8 +1,80 @@
 .formulario_contacto{
-    height: 70vh;
+    height: 80vh;
     display: grid;
-    place-content: center;
+    grid-template-columns: 50% 50%;
     width: 100%;
-    margin: 0 auto;
-    background-color: rgb(122, 22, 216);
+    margin: 80px auto;
+    background-color:#FBF8F1;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* Parte de la imagen */
+.imagen-izquierda {
+    text-align: center;
+    border: 4px solid black;
+    margin: 0 9% 0 20%;
+}
+
+/* Parte de los titulos*/
+.formulario_contacto h1{
+    font-family: 'Cormorant', serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #C3937C;
+    margin-bottom: 25px;
+}
+.formulario_contacto h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #787878;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+/* Parte del forms */
+.texto-derecha{
+    color: #787878;
+    text-align: left;
+    margin: 0 16% 0 2%;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.btn-enviar{
+    text-align: center;
+}
+
+.btn-enviar button{
+    padding: 0;
+    height: 50px;
+    width: 155px;
+}
+
+
+.campo-formulario{
+    margin-bottom: 20px;    
+}
+
+.texto-derecha label{
+    display: inline-block;
+    width: 20%;
+    text-align: start;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+
+.texto-derecha input{
+    color: #787878;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 80%;
+    font-size: 15px;
+}
+
+
+
