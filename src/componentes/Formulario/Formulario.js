@@ -16,7 +16,7 @@ const Formulario = () => {
   return (
     <>
     <div className="imagen-izquierda">
-        <img alt="Imagen de ejemplo" />
+        <img alt="Imagen de ejemplo" src="/Assests/Carrusel/1.png"/>
     </div>
     <div className='texto-derecha'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></link>
