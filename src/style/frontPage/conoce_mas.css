@@ -1,105 +1,244 @@
 body {
-    grid-template-areas: "Novia" "img_Novia" "Accesorios" "img_Accesorios" "Destaca" "img_destaca";
     background-color: #FBF8F1;
+    grid-template-areas: "Novia" "img_Novia" "img_Accesorios" "Accesorios" "Destaca" "img_Destaca";
+    /* Estilos específicos para tamaños de pantalla más pequeños */
+    @media (max-width: 768px) {
+        & h2 {
+            font-size: 2vh;
+            margin-left: 2.5vh;
+            margin-right: 2.5vh;
 
-    /* Estilos de letra y botones que aplican para todo el body */
-    & h1{
-        color: rgb(195, 147, 124);
-        font-size: 43px;
-        line-height: 55px;
-        margin-left: 110px;
-        margin-right: 55px;
-        font-weight: 100;
-        font-family: cormorant, serif;
+            line-height: 4vh;
+            font-weight: bold;
+            letter-spacing: 0.6vh;
+            color: grey;
+        }
+
+        & h1 {
+            margin-left: 2.5vh;
+            margin-right: 2.5vh;
+            font-size: 7vh;
+            line-height: 8vh;
+            font-family: cormorant, serif;
+            color: rgb(195, 147, 124);
+        }
+
+        & p {
+            margin-left: 2.5vh;
+            margin-right: 2.5vh;
+            font-size: 2vh;
+            color: rgb(162, 162, 162);
+        }
+
+        & button.conoce {
+            font-size: 2.4vh;
+            width: 18vh;
+            height: 6.5vh;
+
+            font-weight: bold;
+            color: rgb(195, 147, 124);
+            border-radius: 5vh;
+            background-color: transparent;
+            border-color: rgb(195, 147, 124);
+            font-family: montagu slab, serif;
+            cursor: pointer;
+            margin-left: 2.5vh;
+        }
+
+        & div.grid-layout1 {
+            display: grid;
+            margin-top: 10vh;
+            grid-template: "Novia"
+                            "img_Novia";
+
+            & section.conoce_mas_frontPage1 {
+                grid-area: Novia;
+            }
+
+            & section.imagen1 {
+                grid-area: img_Novia;
+                margin-top: 5vh;
+
+                & img.img1 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        & div.grid-layout2 {
+            display: grid;
+            grid-template: "Accesorios"
+                            "img_Accesorios";
+
+            & section.imagen2 {
+                justify-content: center;
+                align-items: center;
+                margin-top: 3vh;
+                grid-area: img_Accesorios;
+
+                & img.img2 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            & section.conoce_mas_frontPage2 {
+                margin-top: 10vh;
+                grid-area: Accesorios;
+            }
+        }
+
+        & div.grid-layout3 {
+            display: grid;
+            margin-top: 10vh;
+            grid-template: "Destaca"
+                            "img_Destaca";
+
+            & section.conoce_mas_frontPage3 {
+                grid-area: Destaca;
+            }
+
+            & section.imagen3 {
+                justify-content: center;
+                align-items: center;
+                margin-top: 1vh;
+                grid-area: img_Destaca;
+
+                & img.img3 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
     }
 
-    & h2 {
-        line-height: 25px;
-        margin-left: 110px;
-        margin-right: 55px;
-        font-weight: bold;
-        font-size: 13px;
-        letter-spacing: 3px;
-        color: grey;
-    }
+    /* Estilos específicos para tamaños de pantalla más grandes */
+    @media (min-width: 1200px) {
+        & h2 {
+            margin-left: 10vh;
+            margin-right: 10vh;
+            font-size: 1.6vh;
 
-    & p{
-        margin-left: 110px;
-        margin-right: 45px;
-        font-size: 17px;
-        color: rgb(162, 162, 162);
-    }
-    & button.conoce{
-        margin-left: 110px;
-        font-weight: bold;
-        height: 67px;
-        color: rgb(195, 147, 124);
-        font-size: 25px;
-        width: 190px;
-        border-radius: 40px;
-        background-color: transparent;
-        border-color: rgb(195, 147, 124);
-        font-family: montagu slab, serif;
-        cursor: pointer;
-    }
+            line-height: 3vh;
+            font-weight: bold;
+            letter-spacing: 0.5vh;
+            color: grey;
+        }
 
-    /* Estilos especificos */
-    & div.grid-layout1 {
-        display: grid;
-        margin-top: 100px;
-        grid-template:
+        & h1 {
+            margin-left: 10vh;
+            margin-right: 10vh;
+
+            color: rgb(195, 147, 124);
+            font-size: 6vh;
+            line-height: 7vh;
+            font-weight: 100;
+            font-family: cormorant, serif;
+        }
+
+        & p {
+            margin-left: 10vh;
+            margin-right: 10vh;
+
+            font-size: 2.1vh;
+            font-weight: 300;
+            color: rgb(136, 136, 136);
+        }
+
+        & button.conoce {
+            margin-left: 10vh;
+            margin-right: 10vh;
+            width: 21vh;
+            height: 7.5vh;
+
+            font-weight: bold;
+            color: rgb(195, 147, 124);
+            font-size: 2.8vh;
+            border-radius: 5vh;
+            background-color: transparent;
+            border-color: rgb(195, 147, 124);
+            font-family: montagu slab, serif;
+            cursor: pointer;
+            padding: 0vw 0vw 0vw 0vw;
+        }
+
+        div.grid-layout1 {
+            height: auto;
+            display: grid;
+            margin-top: 15vh;
+            grid-template:
             "Novia img_Novia" / 1fr 1.3fr;
 
-        & section.conoce_mas_frontPage1{
-            height: 80vh;
-            place-content: center;
-        }
+            & section.conoce_mas_frontPage1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 80vh;
+            }
 
-        & section.imagen1{
-            justify-content: right;
-            right: 0;
-            & img.img1{
-                max-width: 100%;
-                max-height: 100%;
+            & section.imagen1 {
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                & img.img1 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
             }
         }
-    }
 
-    & div.grid-layout2 {
-        display: grid;
-        margin-top: 50px;
-        max-height: 79vh;
-        grid-template:
+        & div.grid-layout2 {
+            margin-top: -15vh;
+            display: grid;
+            grid-template:
             "img_Accesorios Accesorios" / 1.3fr 1fr;
 
-        & section.imagen2{
-            margin-left: 40px;
-            & img.img2{
-                max-width: 100%;
-                max-height: 100%;
+            & section.imagen2 {
+                height: 90vh;
+                margin-left: 30px;
+
+                & img.img2 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            & section.conoce_mas_frontPage2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 80vh;
             }
         }
 
-        & section.conoce_mas_frontPage2{
-            place-content: center;
-        }
-    }
-
-    & div.grid-layout3{
-        display: grid;
-        margin-top: -40px;
-        grid-template:
+        & div.grid-layout3 {
+            align-items: center;
+            justify-self: center;
+            margin-top: -12vh;
+            display: grid;
+            grid-template:
                 "Destaca img_Destaca" / 1fr 1.3fr;
 
-        & section.conoce_mas_frontPage3{
-            place-content: center;
+            & section.conoce_mas_frontPage3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 80vh;
+            }
 
-        }
+            & section.imagen3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-        & section.imagen3{
-            & img.img3{
-                max-width: 100%;
-                max-height: 100%;
+                & img.img3 {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
             }
         }
     }

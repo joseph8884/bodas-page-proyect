@@ -15,7 +15,7 @@ const Vestido = () => {
                     <button className="conoce">CONOCE<br/>MÁS</button>
                 </section>
                 <section className="imagen3">
-                    <img className="img3" src="/Assests/Novia/img3.png"/>
+                    <img className="img3" src="/Assests/Novia/img3.png" alt=""/>
                 </section>
             </div>
         </body>
