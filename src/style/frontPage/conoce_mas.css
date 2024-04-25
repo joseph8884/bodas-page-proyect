@@ -1,245 +1,249 @@
-body {
-    background-color: #FBF8F1;
-    grid-template-areas: "Novia" "img_Novia" "img_Accesorios" "Accesorios" "Destaca" "img_Destaca";
-    /* Estilos específicos para tamaños de pantalla más pequeños */
-    @media (max-width: 768px) {
-        & h2 {
-            font-size: 2vh;
-            margin-left: 2.5vh;
-            margin-right: 2.5vh;
+/*Estilos generales*/
+h2 {
+    margin-left: 10vh;
+    font-size: 1.7vh;
+    line-height: 3vh;
+    font-weight: bold;
+    letter-spacing: 0.6vh;
+    color: grey;
+}
 
-            line-height: 4vh;
-            font-weight: bold;
-            letter-spacing: 0.6vh;
-            color: grey;
-        }
+h1 {
+    margin-left: 10vh;
+    color: rgb(195, 147, 124);
+    font-size: 6vh;
+    line-height: 7vh;
+    font-weight: 100;
+    font-family: cormorant, serif;
+}
 
-        & h1 {
-            margin-left: 2.5vh;
-            margin-right: 2.5vh;
-            font-size: 7vh;
-            line-height: 8vh;
-            font-family: cormorant, serif;
-            color: rgb(195, 147, 124);
-        }
+p {
+    margin-left: 10vh;
+    font-size: 2.3vh;
+    font-weight: 300;
+    color: rgb(136, 136, 136);
+}
 
-        & p {
-            margin-left: 2.5vh;
-            margin-right: 2.5vh;
-            font-size: 2vh;
-            color: rgb(162, 162, 162);
-        }
+button.conoce {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    width: 21vh;
+    height: 7.5vh;
+    font-weight: bold;
+    color: rgb(195, 147, 124);
+    font-size: 2.8vh;
+    border-radius: 5vh;
+    background-color: transparent;
+    border-color: rgb(195, 147, 124);
+    font-family: montagu slab, serif;
+    cursor: pointer;
+}
 
-        & button.conoce {
-            font-size: 2.4vh;
-            width: 18vh;
-            height: 6.5vh;
+/*Estilos especificos*/
+/*NOVIA*/
+div.grid-layout1 {
+    display: grid;
+    margin-top: 15vh;
+    grid-template:"Novia""img_Novia" / 1fr 1.3fr;
 
-            font-weight: bold;
-            color: rgb(195, 147, 124);
-            border-radius: 5vh;
-            background-color: transparent;
-            border-color: rgb(195, 147, 124);
-            font-family: montagu slab, serif;
-            cursor: pointer;
-            margin-left: 2.5vh;
-        }
+    & .conoce_mas_frontPage1 {
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 5vh;
+        margin-left: 5.5vh;
+    }
 
-        & div.grid-layout1 {
-            display: grid;
-            margin-top: 10vh;
-            grid-template: "Novia"
-                            "img_Novia";
+    & .boton {
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: left;
+        margin-left: 5.5vh;
+    }
 
-            & section.conoce_mas_frontPage1 {
-                grid-area: Novia;
-            }
+    & .imagen1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
 
-            & section.imagen1 {
-                grid-area: img_Novia;
-                margin-top: 5vh;
+    & .img1 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
 
-                & img.img1 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
-        }
 
-        & div.grid-layout2 {
-            display: grid;
-            grid-template: "Accesorios"
-                            "img_Accesorios";
+/*ACCESORIOS*/
+& div.grid-layout2 {
+    display: grid;
+    grid-template:
+            "img_Accesorios Accesorios" / 1.5fr 1fr;
 
-            & section.imagen2 {
-                justify-content: center;
-                align-items: center;
-                margin-top: 3vh;
-                grid-area: img_Accesorios;
+    & section.imagen2 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
 
-                & img.img2 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
-
-            & section.conoce_mas_frontPage2 {
-                margin-top: 10vh;
-                grid-area: Accesorios;
-            }
-        }
-
-        & div.grid-layout3 {
-            display: grid;
-            margin-top: 10vh;
-            grid-template: "Destaca"
-                            "img_Destaca";
-
-            & section.conoce_mas_frontPage3 {
-                grid-area: Destaca;
-            }
-
-            & section.imagen3 {
-                justify-content: center;
-                align-items: center;
-                margin-top: 1vh;
-                grid-area: img_Destaca;
-
-                & img.img3 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
+        & img.img2 {
+            margin-left: 5vh;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 
-    /* Estilos específicos para tamaños de pantalla más grandes */
-    @media (min-width: 1200px) {
-        & h2 {
-            margin-left: 10vh;
-            margin-right: 10vh;
-            font-size: 1.6vh;
+    & section.conoce_mas_frontPage2 {
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 5vh;
+        margin-left: 5.5vh;
+    }
 
-            line-height: 3vh;
-            font-weight: bold;
-            letter-spacing: 0.5vh;
-            color: grey;
-        }
+    & .boton {
+        margin-left: 5.5vh;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: left;
+    }
+}
 
-        & h1 {
-            margin-left: 10vh;
-            margin-right: 10vh;
-
-            color: rgb(195, 147, 124);
-            font-size: 6vh;
-            line-height: 7vh;
-            font-weight: 100;
-            font-family: cormorant, serif;
-        }
-
-        & p {
-            margin-left: 10vh;
-            margin-right: 10vh;
-
-            font-size: 2.1vh;
-            font-weight: 300;
-            color: rgb(136, 136, 136);
-        }
-
-        & button.conoce {
-            margin-left: 10vh;
-            margin-right: 10vh;
-            width: 21vh;
-            height: 7.5vh;
-
-            font-weight: bold;
-            color: rgb(195, 147, 124);
-            font-size: 2.8vh;
-            border-radius: 5vh;
-            background-color: transparent;
-            border-color: rgb(195, 147, 124);
-            font-family: montagu slab, serif;
-            cursor: pointer;
-            padding: 0vw 0vw 0vw 0vw;
-        }
-
-        div.grid-layout1 {
-            height: auto;
-            display: grid;
-            margin-top: 15vh;
-            grid-template:
-            "Novia img_Novia" / 1fr 1.3fr;
-
-            & section.conoce_mas_frontPage1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 80vh;
-            }
-
-            & section.imagen1 {
-                height: 100vh;
-
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-
-                & img.img1 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
-        }
-
-        & div.grid-layout2 {
-            margin-top: -15vh;
-            display: grid;
-            grid-template:
-            "img_Accesorios Accesorios" / 1.3fr 1fr;
-
-            & section.imagen2 {
-                height: 90vh;
-                margin-left: 30px;
-
-                & img.img2 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
-
-            & section.conoce_mas_frontPage2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 80vh;
-            }
-        }
-
-        & div.grid-layout3 {
-            align-items: center;
-            justify-self: center;
-            margin-top: -12vh;
-            display: grid;
-            grid-template:
+/*VESTIDO*/
+& div.grid-layout3 {
+    display: grid;
+    grid-template:
                 "Destaca img_Destaca" / 1fr 1.3fr;
 
-            & section.conoce_mas_frontPage3 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 80vh;
-            }
+    & section.conoce_mas_frontPage3 {
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 5vh;
+        margin-left: 5.5vh;
+    }
 
-            & section.imagen3 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+    & .boton {
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: left;
+        margin-left: 5.5vh;
+    }
 
-                & img.img3 {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
+    & section.imagen3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+
+        & img.img3 {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+/* Estilos específicos para tamaños de pantalla más pequeños */
+@media (max-width: 800px) {
+    & h2 {
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+    }
+
+    & h1 {
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+    }
+
+    & p {
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+    }
+
+    & button.conoce {
+        margin-left: 2.5vh;
+    }
+
+    & div.grid-layout1 {
+        margin-top: 10vh;
+        grid-template:
+            "conoce_mas_frontPage1"
+            "imagen1"
+            "boton";
+
+        & .conoce_mas_frontPage1 {
+            margin-left: 0vh;
+            margin-right: 0vh;
+            grid-area: conoce_mas_frontPage1;
+        }
+
+        & .imagen1 {
+            grid-area: imagen1;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        & .boton {
+            grid-area: boton;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & div.grid-layout2 {
+        margin-top: 5vh;
+        grid-template:
+            "conoce_mas_frontPage2"
+            "img_Accesorios"
+            "boton";
+
+        & section.conoce_mas_frontPage2 {
+            margin-left: 0vh;
+            margin-right: 0vh;
+            grid-area: conoce_mas_frontPage2;
+        }
+
+        & section.imagen2 {
+            grid-area: img_Accesorios;
+            display: flex;
+            justify-content: center;
+        }
+
+        & .boton {
+            grid-area: boton;
+            margin-top: 3vh;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & div.grid-layout3 {
+        display: grid;
+        margin-top: 1vh;
+        grid-template: "Destaca"
+                        "img_Destaca"
+                        "boton";
+
+        & section.conoce_mas_frontPage3 {
+            margin-top: 5vh;
+            margin-left: 0vh;
+            margin-right: 0vh;
+            grid-area: Destaca;
+        }
+
+        & section.imagen3 {
+            display: flex;
+            justify-content: center;
+            grid-area: img_Destaca;
+            & img.img3 {
             }
+        }
+
+        & .boton {
+            margin-top: 3vh;
+            grid-area: boton;
+            display: flex;
+            justify-content: center;
         }
     }
 }
