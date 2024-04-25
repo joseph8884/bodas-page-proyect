@@ -46,20 +46,11 @@
 }
 
 .btn-enviar button{
-    color: #C3937C;
-    background-color: transparent;
-    outline: none;
-    border:2px solid #C3937C;
-    border-radius: 40px;
+    padding: 0;
     height: 50px;
     width: 155px;
-    font-family: 'Montagu Slab', serif;
-    font-weight: bold;
 }
-.btn-enviar button:hover{
-    color: #FBF8F1;
-    background-color: #C3937C;
-}
+
 
 .campo-formulario{
     margin-bottom: 20px;    

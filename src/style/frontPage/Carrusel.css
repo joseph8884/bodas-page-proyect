@@ -71,3 +71,23 @@ header {
     width: 50px;
     background-color: #0000004d;
 }
+
+@media (max-width: 800px) {
+    header {
+        height: 60vw;
+        & div.list img {
+            height: 60vw;
+        }
+        & div.buttons button {
+            width: 10vw;
+            height: 10vw;
+            font-size: 3vw;
+        }
+        & ul.dots li {
+            width: 2vw;
+            height: 2vw;
+            padding: 2vw;
+            margin: 2vw;
+        }
+    }
+}
