@@ -142,7 +142,7 @@ div.grid-layout1 {
 }
 
 /* Estilos específicos para tamaños de pantalla más pequeños */
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     & h2 {
         margin-left: 2.5vh;
         margin-right: 2.5vh;
