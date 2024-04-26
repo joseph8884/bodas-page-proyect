@@ -16,7 +16,7 @@ const Nav = () => {
                     <p>botones de redes sociales</p>
                 </div>
                 <div className="options">
-                    <img className='quienes_somos_nav' src="/Assests/Navimages/1.png" alt="¿quienes somos?" />
+                    <img className='quienes_somos_nav' src="/Assests/Navimages/1.png" alt="¿quienes somos?"/>
                     <img className='novias_img' src="/Assests/Navimages/2.png" alt="NOVIAS" />
                     <img className='accesorios_nav' src="/Assests/Navimages/3.png" alt="ACCESORIOS" />
                     <img className='vestidos' src="/Assests/Navimages/4.png" alt="VESTIDOS" />
