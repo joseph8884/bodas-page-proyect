@@ -166,8 +166,9 @@ div.grid-layout1 {
         margin-top: 10vh;
         grid-template:
             "conoce_mas_frontPage1"
-            "imagen1"
-            "boton";
+            "boton"
+            "imagen1";
+            
 
         & .conoce_mas_frontPage1 {
             margin-left: 0vh;
@@ -194,8 +195,8 @@ div.grid-layout1 {
         margin-top: 5vh;
         grid-template:
             "conoce_mas_frontPage2"
-            "img_Accesorios"
-            "boton";
+            "boton"
+            "img_Accesorios";
 
         & section.conoce_mas_frontPage2 {
             margin-left: 0vh;
@@ -221,8 +222,9 @@ div.grid-layout1 {
         display: grid;
         margin-top: 1vh;
         grid-template: "Destaca"
-                        "img_Destaca"
-                        "boton";
+                        "boton"
+                        "img_Destaca";
+                        
 
         & section.conoce_mas_frontPage3 {
             margin-top: 5vh;
