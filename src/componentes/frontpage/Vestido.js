@@ -1,5 +1,3 @@
-import img3 from "../../img_novia/img3.png";
-
 
 const Vestido = () => {
     return (
@@ -13,10 +11,12 @@ const Vestido = () => {
                 <br/>
                 <p>Encuentra el vestido perfecto para cada ocasion y haz una entrada inolvidable</p>
                 <br/>
+            </section>
+            <section className="boton">
                 <button className="conoce">CONOCE<br/>MÁS</button>
             </section>
             <section className="imagen3">
-                <img className="img3" src={img3}/>
+                <img className="img3" src="/Assests/Novia/img3.png" alt=""/>
             </section>
         </div>
     )
