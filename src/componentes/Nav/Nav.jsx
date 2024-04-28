@@ -11,16 +11,16 @@ const Nav = () => {
     return (
         <nav>
             <div className="navContainer">
-                <img className='logo' src='/Assests/Navimages/LOGO.png' alt='logo' />
+                <img className='logo' src={process.env.PUBLIC_URL + '/Assets/Navimages/LOGO.png'} alt='logo' />
                 <div className="social_media">
                     <p>botones de redes sociales</p>
                 </div>
                 <div className="options">
-                    <img className='quienes_somos_nav' src="/Assests/Navimages/1.png" alt="¿quienes somos?" />
-                    <img className='novias_img' src="/Assests/Navimages/2.png" alt="NOVIAS" />
-                    <img className='accesorios_nav' src="/Assests/Navimages/3.png" alt="ACCESORIOS" />
-                    <img className='vestidos' src="/Assests/Navimages/4.png" alt="VESTIDOS" />
-                    <img className='otros_servicios_nav' src="/Assests/Navimages/5.png" alt="OTROS SERVICIOS" />
+                    <img className='quienes_somos_nav' src={process.env.PUBLIC_URL + '/Assets/Navimages/1.png'} alt="¿quienes somos?" />
+                    <img className='novias_img' src={process.env.PUBLIC_URL + '/Assets/Navimages/2.png'} alt="NOVIAS" />
+                    <img className='accesorios_nav' src={process.env.PUBLIC_URL + '/Assets/Navimages/3.png'} alt="ACCESORIOS" />
+                    <img className='vestidos' src={process.env.PUBLIC_URL + '/Assets/Navimages/4.png'} alt="VESTIDOS" />
+                    <img className='otros_servicios_nav' src={process.env.PUBLIC_URL + '/Assets/Navimages/5.png'} alt="OTROS SERVICIOS" />
                 </div>
                 <div className="buttonContainer">
                     <button onClick={handleClick}>AGENDA TU CITA</button>
