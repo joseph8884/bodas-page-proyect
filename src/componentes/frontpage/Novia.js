@@ -16,7 +16,7 @@ const Novia = () => {
                 <button className="conoce">CONOCE<br/>MÁS<br/></button>
             </section>
             <section className="imagen1">
-                <img className="img1" src="/Assests/Novia/img1.png" alt=""/>
+                <img className="img1" src={process.env.PUBLIC_URL + '/Assets/Novia/img1.png'} alt=""/>
             </section>
         </div>
     );

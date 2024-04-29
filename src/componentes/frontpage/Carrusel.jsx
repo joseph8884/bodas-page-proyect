@@ -41,42 +41,35 @@ const Carrusel = () => {
   }, [active]);
   return (
     <header className="slider" id="inicio">
-      {/*<article className="cover">
-                <p>"Formamos líderes del mañana, impulsados por la investigación,
-                    agentes de cambio, y promotores del progreso y bienestar."</p>
-                <p>Egresados IERD La Fuente</p>
-                <a href="https://egresadoslafuentetocancipa.wordpress.com/2023/11/26/historia-de-la-institucion-educativa-rural-departamental-la-fuente-tocancipa/"
-                    target='blank'><button className="btn">Saber más</button></a>
-            </article>*/}
       <div className="list" ref={items}>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assests/Carrusel/1.png"}
-            alt=""
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/1.png"}
+            alt="Descripción de la imagen 1"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assests/Carrusel/1.png"}
-            alt=""
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/2.png"}
+            alt="Descripción de la imagen 2"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assests/Carrusel/1.png"}
-            alt=""
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/3.png"}
+            alt="Descripción de la imagen 3"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assests/Carrusel/1.png"}
-            alt=""
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/4.png"}
+            alt="Descripción de la imagen 4"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assests/Carrusel/1.png"}
-            alt=""
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/5.png"}
+            alt="Descripción de la imagen 5"
           />
         </div>
       </div>

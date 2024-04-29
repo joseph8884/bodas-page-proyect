@@ -3,7 +3,7 @@ const Accesorios = () => {
     return (
         <div className="grid-layout2">
             <section className="imagen2">
-                <img className="img2" src="/Assests/Novia/img2.png"/>
+                <img className="img2" src={process.env.PUBLIC_URL + "/Assets/Novia/img2.png"} alt="Imagen 2"/>
             </section>
             <section className="conoce_mas_frontPage2">
                 <h2>ACCESORIOS</h2>
