@@ -68,3 +68,36 @@ footer {
         }
     }
 }
+@media (max-width: 820px) {
+    footer div.footer_container {
+            row-gap: 8vw;
+            margin:5% 5%;
+            grid-template:
+                "message message" auto
+                "links links"auto
+                "credits politicas" auto/
+                auto auto;
+            & div.message_footer h3 {
+                    font-size: 6.5vw;
+                }
+            & div.madeitbywho a {
+                    font-size: 3.5vw;
+            }
+    
+            & div.politicasprivacidad a {
+                    font-size: 3.5vw;
+                }
+            & div.links {
+                & h1{
+                    font-size: 9.8vw;
+                    margin: 0 0 2vw 0;
+                }
+                & div.horizontal {
+                    width: 80%;
+                    & a{
+                        font-size: 3.2vw;
+                    }
+                }
+            }
+        }
+    }
