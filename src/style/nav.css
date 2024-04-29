@@ -17,6 +17,7 @@ nav {
             grid-area: logo;
             margin: 0 auto 0 auto;
             width: 35vw;
+            cursor: pointer;
         }
         & div.socialMedia {
             grid-area: socialMedia;
@@ -32,6 +33,7 @@ nav {
             justify-content: space-between;
             & img{
                 width: 9vw;
+                cursor: pointer;
             }
         }
         & div.buttonContainer {
@@ -48,7 +50,7 @@ nav {
         }
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     nav {
         & div.navContainer {
             margin-left: 0;

@@ -16,13 +16,13 @@ const Formulario = () => {
   return (
     <>
     <div className="imagen-izquierda">
-        <img alt="Imagen de ejemplo" />
+        <img alt="Imagen de ejemplo" src={process.env.PUBLIC_URL + '/Assets/form_image.png'}/>
     </div>
     <div className='texto-derecha'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet"></link>
         <h2>EL LUGAR PERFECTO PARA TODO LO QUE NECESITAS.</h2>
-
+        <h1>CONTACTANOS</h1>
         <form onSubmit={handleSubmit} className="formulario">
             <div className='campo-formulario'>
             <label htmlFor="nombre">Tu Nombre: </label>
