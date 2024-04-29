@@ -26,6 +26,11 @@ nav {
             justify-content: center;
             align-items: center;
             margin: 0;
+            instagram-alt{
+                font-size: 2vw;
+                cursor: pointer;
+            
+            }
         }
         & div.options {
             grid-area: options;
