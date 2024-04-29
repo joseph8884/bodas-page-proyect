@@ -70,11 +70,41 @@
 @media (max-width: 800px) {
     .Galeria_fotos_frontPage{
         height: 60vw;
-        margin-bottom: 0;
+        margin: 20% 0 20% 0;
         & div.titulo{
             & h1{
                 font-size: 8vw;
             }
         }
+        & div.carrusel{
+            grid-template-columns: auto 50% auto;
+            & div.img-left{
+                overflow:hidden;
+                opacity: 0.8;
+                margin: 0;
+                & img{
+                    overflow:hidden;
+                    width: 40vw;
+                    height: 80%;
+                }
+            }
+            & div.img-center{
+                margin: 0vw;
+                align-content: center;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & div.img-right{
+                margin: 0vw;
+                overflow: hidden;
+                opacity: 0.8;
+                & img{
+                    width: 40vw;
+                    height: 80%;
+                }
+            }
+        } 
     }
 }
