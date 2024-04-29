@@ -50,25 +50,25 @@ const Carrusel = () => {
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Carrusel/2.png"}
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/1.png"}
             alt="Descripción de la imagen 2"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Carrusel/3.png"}
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/1.png"}
             alt="Descripción de la imagen 3"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Carrusel/4.png"}
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/1.png"}
             alt="Descripción de la imagen 4"
           />
         </div>
         <div className="item">
           <img
-            src={process.env.PUBLIC_URL + "/Assets/Carrusel/5.png"}
+            src={process.env.PUBLIC_URL + "/Assets/Carrusel/1.png"}
             alt="Descripción de la imagen 5"
           />
         </div>

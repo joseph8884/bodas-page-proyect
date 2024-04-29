@@ -1,5 +1,5 @@
 /*Estilos generales*/
-h2 {
+h3.titulo2 {
     margin-left: 10vh;
     font-size: 1.7vh;
     line-height: 3vh;
@@ -8,7 +8,7 @@ h2 {
     color: grey;
 }
 
-h1 {
+h2.titulo {
     margin-left: 10vh;
     color: rgb(195, 147, 124);
     font-size: 6vh;
@@ -38,6 +38,10 @@ button.conoce {
     font-family: montagu slab, serif;
     cursor: pointer;
 }
+button.conoce:hover{
+    color: #FBF8F1;
+    background-color: #C3937C;
+    }
 
 /*Estilos especificos*/
 /*NOVIA*/

@@ -72,7 +72,7 @@ header {
     background-color: #0000004d;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     header {
         height: 60vw;
         & div.list img {
