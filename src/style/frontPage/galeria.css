@@ -71,5 +71,10 @@
     .Galeria_fotos_frontPage{
         height: 60vw;
         margin-bottom: 0;
+        & div.titulo{
+            & h1{
+                font-size: 8vw;
+            }
+        }
     }
 }
