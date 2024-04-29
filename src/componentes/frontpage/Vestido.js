@@ -3,8 +3,8 @@ const Vestido = () => {
     return (
         <div className="grid-layout3">
             <section className="conoce_mas_frontPage3">
-                <h2>DESCUBRE COMO DESTACAR EN TU PROXIMA FIESTA</h2>
-                <h1>¡BRILLA CON EL VESTIDO PERFECTO!</h1>
+                <h3 className="titulo2">DESCUBRE COMO DESTACAR EN TU PROXIMA FIESTA</h3>
+                <h2 className="titulo">¡BRILLA CON EL VESTIDO PERFECTO!</h2>
                 <br/>
                 <p>Descubre una amplia seleccion de vestidos elegantes y sofisticados que te ayudarán a destacar y
                     brillar en tu proxima fiesta.</p>

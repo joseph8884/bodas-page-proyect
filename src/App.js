@@ -17,7 +17,7 @@ function App() {
   ];
 
   return (
-    <body>
+    <>
       <Nav />
       <br></br>
         <Carrusel />
@@ -31,7 +31,7 @@ function App() {
       <Formulario />
     </section>
       <Footer/>
-    </body>
+    </>
   );
 }
 
