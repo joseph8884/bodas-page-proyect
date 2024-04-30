@@ -18,10 +18,11 @@ footer {
             grid-area: message;
             background-color: #EAD9C9;
             & h3 {
-                font-family: 'Cormorant';
+                font-family: 'Cormorant',serif;
                 background-color: #EAD9C9;
-                font-size: 3.5vw;
+                font-size: 3.4vw;
                 color: #787878;
+                font-weight: normal;
             }
         }
         & div.madeitbywho {
@@ -49,7 +50,8 @@ footer {
             background-color: #EAD9C9;
             & h1{
                 background-color: #EAD9C9;
-                font-family: 'Cormorant';
+                font-family: 'Cormorant',serif;
+                font-weight: normal;
                 font-size: 1.8vw;
                 color: #787878;
                 margin: 0 0 2vw 0;

@@ -21,9 +21,15 @@ function App() {
       <Nav />
       <br></br>
         <Carrusel />
-          <Novia />
-          <Accesorios />
-          <Vestido />
+        <section id="novia_seccion" className="novia_seccion">
+        <Novia />
+        </section>
+        <section id="accesorios_seccion" className="accesorios_seccion">
+        <Accesorios />
+        </section>
+        <section id="vestidos_seccion" className="vestidos_seccion">
+        <Vestido />
+        </section>
       <section className="Galeria_fotos_frontPage">
         <Galeria images={images}/>
       </section>
