@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bodas-page-proyect/static/css/main.9e248911.css",
-    "main.js": "/bodas-page-proyect/static/js/main.280a6062.js",
-    "index.html": "/bodas-page-proyect/index.html",
-    "main.9e248911.css.map": "/bodas-page-proyect/static/css/main.9e248911.css.map",
-    "main.280a6062.js.map": "/bodas-page-proyect/static/js/main.280a6062.js.map"
+    "main.css": "/static/css/main.9e248911.css",
+    "main.js": "/static/js/main.8f014924.js",
+    "index.html": "/index.html",
+    "main.9e248911.css.map": "/static/css/main.9e248911.css.map",
+    "main.8f014924.js.map": "/static/js/main.8f014924.js.map"
   },
   "entrypoints": [
     "static/css/main.9e248911.css",
-    "static/js/main.280a6062.js"
+    "static/js/main.8f014924.js"
   ]
 }
