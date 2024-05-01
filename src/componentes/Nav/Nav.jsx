@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="navContainer">
         <img
           className="logo"
-          src={process.env.PUBLIC_URL + "/Assets/Navimages/LOGO.png"}
+          src={process.env.PUBLIC_URL + "/LOGO.png"}
           alt="logo"
         />
         <div className="social_media">
